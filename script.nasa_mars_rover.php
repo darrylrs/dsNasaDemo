@@ -10,7 +10,6 @@ require_once('api.nasa_mars_rover.php');
 $result = MarsRover::callApi();
 
 if ($result && $first_result = $result['photos'][0]) {
-	var_dump($first_result);
 	$url = $first_result['img_src'];
 	$remoteId = $first_result['id'];
 
